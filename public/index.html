@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest | Online Book Store</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">📚 BookNest</a>
+    <a class="cart-link" href="#cart">🛒 Cart <span id="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+      <h1>Discover your next<br><span>great read.</span></h1>
+      <p>Explore stories, ideas and knowledge picked just for you.</p>
+      <a class="primary-button" href="#books">Explore Books</a>
+    </section>
+
+    <section class="catalogue" id="books">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>Popular Books</h2>
+        </div>
+        <input id="search" type="search" placeholder="Search books or authors..." aria-label="Search books">
+      </div>
+      <p id="book-status" role="status">Loading books...</p>
+      <div id="book-list" class="book-grid"></div>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items"></div>
+      <p class="total">Total: <strong id="cart-total">₹0</strong></p>
+      <button id="clear-cart" class="secondary-button" type="button">Clear Cart</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>BookNest — Every book opens a new world.</p>
+    <p>Online Book Store | Jenkins · Docker · Kubernetes</p>
+  </footer>
+</body>
+</html>
